@@ -14,7 +14,7 @@ def sign(m):
 	#generate signature
 
 	#r,s = ecdsa.sign(m, private_key, hashfunc=sha256)
-	r,s =ecdsa.sign(m, private_key, curve.secp256k1, hashfunc=sha256, bool = False)
+	r,s =ecdsa.sign(m, private_key, curve.secp256k1, hashfunc=sha256, False)
 	
 	assert isinstance( public_key, point.Point )
 	assert isinstance( r, int )
