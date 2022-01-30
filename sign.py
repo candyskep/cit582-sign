@@ -21,7 +21,3 @@ def sign(m):
 	assert isinstance( s, int )
 	return( public_key, [r,s] )
 	
-
-	sign(1)
-
-
